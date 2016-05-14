@@ -1,6 +1,6 @@
 var pjson = require('./package.json'),
     debug = require('debug')('openframe:processing'),
-    extension = require('openframe-extension');
+    extension = module.exports = {};
 /**
 * Extension initialization method.
 *
@@ -10,7 +10,7 @@ var pjson = require('./package.json'),
 */
 extension.init = function(OF) {
     // do your extension thing
-    debug('=======>   Openframe-glslViewer initialized!   <=======');
+    debug('=======>   openframe-processing initialized!   <=======');
 
     /**
      * Extensions can add new artwork formats to the frame.
