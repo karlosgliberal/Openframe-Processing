@@ -1,7 +1,7 @@
 var pjson = require('./package.json'),
     debug = require('debug')('openframe:processing'),
     Extension = require('openframe-extension'),
-    mkdirp = require('mkdirp');
+    fs = require('fs-extra');
 
 
 
@@ -24,12 +24,11 @@ module.exports = new Extension({
         'download': true,
         // how do start this type of artwork? currently two token replacements, $filepath and $url
         'start_command': function(custom_opts) {
-            mkdirp('/tmp/foo/bar/baz', function(err) {
-                if(err) {
-                    console.error(err);
-                } else {
-                    console.log('pow!');
+            fs.mkdirs('/tmp/some/long/path/that/prob/doesnt/exist', function(err) {
+                if (err) {
+                    return console.error(err);
                 }
+                console.log('success!');
             });
             debug('Artwork config: ', custom_opts);
 
