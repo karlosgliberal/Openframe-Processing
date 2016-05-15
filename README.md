@@ -1,3 +1,5 @@
-# Openframe Processing exteniosn TODO
+# Openframe Processing extension
 
-Testing packge
+This package does not work. This published to the openFrame testing platform.
+
+This extension will allow processing in OpenFrame use.
