@@ -24,18 +24,8 @@ module.exports = new Extension({
         'download': true,
         // how do start this type of artwork? currently two token replacements, $filepath and $url
         'start_command': function(custom_opts) {
-            fs.mkdirs('/tmp/some/long/path/that/prob/doesnt/exist', function(err) {
-                if (err) {
-                    return console.error(err);
-                }
-                console.log('success!');
-            });
-            debug('Artwork config: ', custom_opts);
-
-            var command = 'processing-java';
-            //command += '--'
-
-            return command;
+          var command = 'opf-processing.sh $id $filepath $filename';
+          return command;
         },
         // how do we stop this type of artwork?
         'end_command': 'sudo pkill -f processing-java'
