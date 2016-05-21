@@ -1,6 +1,6 @@
 # Openframe Processing extension
-# Autor [karlosgliberal](http://labs.interzonas.info)
-# twitter (@patxangas)(http://twitter.com/patxangas)
+Autor [karlosgliberal](http://labs.interzonas.info)
+twitter (@patxangas)(http://twitter.com/patxangas)
 
 
 First version of the extension Openframe-processing.
