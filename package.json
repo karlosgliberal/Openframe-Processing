@@ -18,7 +18,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "coveralls": "^2.11.9",
-    "eslint": "^2.8.0",
+    "eslint": "^6.5.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "sinon": "^1.17.2"
